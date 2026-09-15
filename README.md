@@ -1,91 +1,112 @@
-# Concord — Bank Reconciliation Engine (Multi-user)
+# Concord — Bank Reconciliation Engine
 
-Python matching engine + web UI with **Google sign-in** and **private per-user data**.
+Python matching engine + web UI with **Google sign-in** (Supabase) and **private per-user workspaces**.
 
-Supports **CSV**, **Excel (.xlsx)**, **OFX/QFX**.
-
----
-
-## Features
-
-- Google sign-in (Supabase Auth)
-- Each user has a private workspace (Postgres)
-- Auto-match + manual match
-- Exceptions + recon report
-- Export CSV / Excel
+Supports **CSV**, **Excel (.xlsx)**, **OFX / QFX**.
 
 ---
 
-## 1. Create a free Supabase project
+## Quick start (Railway)
 
-1. Go to [https://supabase.com](https://supabase.com) → New project  
-2. Wait for the database to finish provisioning  
-3. Open **SQL Editor** → paste and run the contents of `supabase_schema.sql`  
-4. Go to **Project Settings → API** and copy:
+### 1. Supabase project
+
+1. Create a project at https://supabase.com
+2. **SQL Editor** → run the entire contents of `supabase_schema.sql`
+3. **Project Settings → API** copy:
    - Project URL → `SUPABASE_URL`
    - `anon` `public` key → `SUPABASE_ANON_KEY`
-   - `JWT Secret` (under JWT Keys) → `SUPABASE_JWT_SECRET`
-5. Go to **Project Settings → Database** → copy the **URI** connection string  
-   (use the one with password; replace `[YOUR-PASSWORD]`) → `DATABASE_URL`  
-   Prefer the **Transaction** pooler URI on port `6543` if available.
+   - (optional) JWT Secret → `SUPABASE_JWT_SECRET` (legacy HS256; JWKS is preferred)
+4. **Project Settings → Database** → copy the **Transaction pooler** URI (port `6543`) → `DATABASE_URL`
 
----
+### 2. Google OAuth (critical)
 
-## 2. Enable Google sign-in
+1. Supabase → **Authentication → Providers → Google** → Enable  
+2. Google Cloud Console → **APIs & Services → Credentials** → Create **OAuth client ID** (Web application)
 
-1. In Supabase: **Authentication → Providers → Google** → Enable  
-2. Create OAuth credentials in [Google Cloud Console](https://console.cloud.google.com/apis/credentials):
-   - Type: **OAuth client ID** → Web application  
-   - Authorized JavaScript origins:
-     - `http://localhost:8080`
-     - `https://YOUR-RAILWAY-DOMAIN.up.railway.app`
-   - Authorized redirect URIs:
-     - `https://YOUR_SUPABASE_PROJECT.supabase.co/auth/v1/callback`
-3. Copy Client ID + Client Secret into the Supabase Google provider settings → Save  
+**Authorized JavaScript origins**
+```
+http://localhost:8080
+https://YOUR-APP.up.railway.app
+```
 
----
+**Authorized redirect URIs**
+```
+https://YOUR_SUPABASE_REF.supabase.co/auth/v1/callback
+```
 
-## 3. Railway environment variables
+3. Paste Client ID + Client Secret into the Supabase Google provider → Save
 
-In Railway → your service → **Variables**, add:
+4. Supabase → **Authentication → URL Configuration**
+   - **Site URL** = `https://YOUR-APP.up.railway.app`
+   - **Redirect URLs** add:
+     ```
+     https://YOUR-APP.up.railway.app/**
+     http://localhost:8080/**
+     ```
 
-| Name | Value |
-|------|--------|
-| `SUPABASE_URL` | from Supabase API settings |
-| `SUPABASE_ANON_KEY` | anon public key |
-| `SUPABASE_JWT_SECRET` | JWT secret |
-| `DATABASE_URL` | Postgres URI from Supabase |
+### 3. Railway variables
 
-Start command (already in `Procfile` / `railway.toml`):
+| Variable | Required | Notes |
+|----------|----------|-------|
+| `SUPABASE_URL` | Yes | `https://xxxx.supabase.co` (no trailing slash) |
+| `SUPABASE_ANON_KEY` | Yes | anon public key |
+| `DATABASE_URL` | Yes | Postgres pooler URI |
+| `SUPABASE_JWT_SECRET` | Optional | only needed for very old projects |
 
-```text
+Start command (already set):
+```
 uvicorn app.main:app --host 0.0.0.0 --port $PORT
 ```
 
----
-
-## 4. Local run
+### 4. Deploy
 
 ```bash
-export SUPABASE_URL=...
-export SUPABASE_ANON_KEY=...
-export SUPABASE_JWT_SECRET=...
-export DATABASE_URL=...
+git add .
+git commit -m "Concord auth + recon engine"
+git push
+```
+
+Railway will auto-deploy. Open the public URL → **Continue with Google**.
+
+---
+
+## Local development
+
+```bash
+export SUPABASE_URL=https://xxxx.supabase.co
+export SUPABASE_ANON_KEY=eyJ...
+export DATABASE_URL=postgresql://...
+# optional:
+# export SUPABASE_JWT_SECRET=...
 
 pip install -r requirements.txt
 uvicorn app.main:app --host 0.0.0.0 --port 8080
 ```
 
-Open http://127.0.0.1:8080 → **Continue with Google**.
+Open http://127.0.0.1:8080
 
 ---
 
-## Security model
+## Auth architecture
 
-- Browser signs in via Supabase (Google OAuth)
-- API requires `Authorization: Bearer <access_token>`
-- Backend verifies JWT with `SUPABASE_JWT_SECRET`
-- All transactions/matches are stored with `user_id` — users never see each other’s data
+- Browser uses Supabase JS → Google OAuth
+- After redirect, Supabase stores the session and the UI reads `session.access_token`
+- Every API call sends `Authorization: Bearer <access_token>`
+- Backend verifies the JWT with:
+  1. **JWKS** (ES256 / RS256) — modern default
+  2. Fallback to **HS256** + `SUPABASE_JWT_SECRET` if present
+- All data is stored with `user_id` so each account is isolated
+
+---
+
+## Troubleshooting “stuck on Continue with Google”
+
+1. Open browser DevTools → Console + Network after clicking the button.
+2. Hit `https://YOUR-APP.up.railway.app/api/health` — all flags should be `true` except maybe `jwt_secret`.
+3. Confirm **Site URL** and **Redirect URLs** in Supabase exactly match your Railway domain (including `https://`).
+4. Confirm Google Cloud redirect URI is exactly:
+   `https://YOUR_SUPABASE_REF.supabase.co/auth/v1/callback`
+5. Check Railway logs for lines starting with `[auth] verify failed`.
 
 ---
 
