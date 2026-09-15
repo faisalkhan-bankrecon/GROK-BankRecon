@@ -1,0 +1,677 @@
+OFXHEADER:100
+DATA:OFXSGML
+VERSION:102
+SECURITY:NONE
+ENCODING:USASCII
+CHARSET:1252
+COMPRESSION:NONE
+OLDFILEUID:NONE
+NEWFILEUID:NONE
+
+<OFX>
+  <SIGNONMSGSRSV1>
+    <SONRS>
+      <STATUS>
+        <CODE>0
+        <SEVERITY>INFO
+      </STATUS>
+      <DTSERVER>20191231120000
+      <LANGUAGE>ENG
+    </SONRS>
+  </SIGNONMSGSRSV1>
+  <BANKMSGSRSV1>
+    <STMTTRNRS>
+      <TRNUID>1
+      <STATUS>
+        <CODE>0
+        <SEVERITY>INFO
+      </STATUS>
+      <STMTRS>
+        <CURDEF>CAD
+        <BANKACCTFROM>
+          <BANKID>0003
+          <ACCTID>5069984
+          <ACCTTYPE>CHECKING
+        </BANKACCTFROM>
+        <BANKTRANLIST>
+          <DTSTART>20190101
+          <DTEND>20191231
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190101
+            <TRNAMT>3200.00
+            <FITID>B1001
+            <NAME>PAYROLL ACME CORP
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190103
+            <TRNAMT>-1450.00
+            <FITID>B1002
+            <NAME>PAD RENT LANDLORD
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190107
+            <TRNAMT>-38.78
+            <FITID>B1073
+            <NAME>ContactlessInteracpurchase PETERSPIZZA
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190108
+            <TRNAMT>-124.67
+            <FITID>B1005
+            <NAME>POS PURCHASE LOBLAWS
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190110
+            <TRNAMT>-200.00
+            <FITID>B1074
+            <NAME>e-Transfer sent Tracey
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190112
+            <TRNAMT>-98.50
+            <FITID>B1003
+            <NAME>HYDRO ONE PAYMENT
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190115
+            <TRNAMT>-89.99
+            <FITID>B1004
+            <NAME>ROGERS CABLE
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190122
+            <TRNAMT>-86.20
+            <FITID>B1006
+            <NAME>POS PURCHASE METRO
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190201
+            <TRNAMT>3200.00
+            <FITID>B1007
+            <NAME>PAYROLL ACME CORP
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190203
+            <TRNAMT>-1450.00
+            <FITID>B1008
+            <NAME>PAD RENT LANDLORD
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190208
+            <TRNAMT>-124.67
+            <FITID>B1011
+            <NAME>POS PURCHASE LOBLAWS
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190212
+            <TRNAMT>-112.30
+            <FITID>B1009
+            <NAME>HYDRO ONE PAYMENT
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190214
+            <TRNAMT>-65.00
+            <FITID>B1075
+            <NAME>POS PURCHASE FLOWERS
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190215
+            <TRNAMT>-89.99
+            <FITID>B1010
+            <NAME>ROGERS CABLE
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190222
+            <TRNAMT>-86.20
+            <FITID>B1012
+            <NAME>POS PURCHASE METRO
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190301
+            <TRNAMT>3200.00
+            <FITID>B1013
+            <NAME>PAYROLL ACME CORP
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190303
+            <TRNAMT>-1450.00
+            <FITID>B1014
+            <NAME>PAD RENT LANDLORD
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190308
+            <TRNAMT>-124.67
+            <FITID>B1017
+            <NAME>POS PURCHASE LOBLAWS
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190312
+            <TRNAMT>-98.50
+            <FITID>B1015
+            <NAME>HYDRO ONE PAYMENT
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190315
+            <TRNAMT>-89.99
+            <FITID>B1016
+            <NAME>ROGERS CABLE
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190320
+            <TRNAMT>-100.00
+            <FITID>B1076
+            <NAME>ATM WITHDRAWAL
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190322
+            <TRNAMT>-86.20
+            <FITID>B1018
+            <NAME>POS PURCHASE METRO
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190331
+            <TRNAMT>2.15
+            <FITID>B1090
+            <NAME>INTEREST CREDIT
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190401
+            <TRNAMT>3200.00
+            <FITID>B1019
+            <NAME>PAYROLL ACME CORP
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190403
+            <TRNAMT>-1450.00
+            <FITID>B1020
+            <NAME>PAD RENT LANDLORD
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190405
+            <TRNAMT>-229.62
+            <FITID>B1077
+            <NAME>INSURANCE INTACT
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190408
+            <TRNAMT>-124.67
+            <FITID>B1023
+            <NAME>POS PURCHASE LOBLAWS
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190412
+            <TRNAMT>-112.30
+            <FITID>B1021
+            <NAME>HYDRO ONE PAYMENT
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190415
+            <TRNAMT>-89.99
+            <FITID>B1022
+            <NAME>ROGERS CABLE
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190422
+            <TRNAMT>-86.20
+            <FITID>B1024
+            <NAME>POS PURCHASE METRO
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190501
+            <TRNAMT>3200.00
+            <FITID>B1025
+            <NAME>PAYROLL ACME CORP
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190503
+            <TRNAMT>-1450.00
+            <FITID>B1026
+            <NAME>PAD RENT LANDLORD
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190508
+            <TRNAMT>-124.67
+            <FITID>B1029
+            <NAME>POS PURCHASE LOBLAWS
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190512
+            <TRNAMT>-98.50
+            <FITID>B1027
+            <NAME>HYDRO ONE PAYMENT
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190515
+            <TRNAMT>-89.99
+            <FITID>B1028
+            <NAME>ROGERS CABLE
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190518
+            <TRNAMT>-133.45
+            <FITID>B1078
+            <NAME>POS PURCHASE CANADIANTIRE
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190522
+            <TRNAMT>-86.20
+            <FITID>B1030
+            <NAME>POS PURCHASE METRO
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190601
+            <TRNAMT>3200.00
+            <FITID>B1031
+            <NAME>PAYROLL ACME CORP
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190601
+            <TRNAMT>500.00
+            <FITID>B1079
+            <NAME>e-Transfer Autodeposit
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190603
+            <TRNAMT>-1450.00
+            <FITID>B1032
+            <NAME>PAD RENT LANDLORD
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190608
+            <TRNAMT>-124.67
+            <FITID>B1035
+            <NAME>POS PURCHASE LOBLAWS
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190612
+            <TRNAMT>-112.30
+            <FITID>B1033
+            <NAME>HYDRO ONE PAYMENT
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190615
+            <TRNAMT>-89.99
+            <FITID>B1034
+            <NAME>ROGERS CABLE
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190621
+            <TRNAMT>-42.50
+            <FITID>B1080
+            <NAME>CINEPLEX TICKETS
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190622
+            <TRNAMT>-86.20
+            <FITID>B1036
+            <NAME>POS PURCHASE METRO
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>FEE
+            <DTPOSTED>20190630
+            <TRNAMT>-14.95
+            <FITID>B1089
+            <NAME>MONTHLY FEE
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190701
+            <TRNAMT>3200.00
+            <FITID>B1037
+            <NAME>PAYROLL ACME CORP
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190703
+            <TRNAMT>-1450.00
+            <FITID>B1038
+            <NAME>PAD RENT LANDLORD
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190704
+            <TRNAMT>-70.15
+            <FITID>B1081
+            <NAME>GAS STATION ESSO
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190708
+            <TRNAMT>-124.67
+            <FITID>B1041
+            <NAME>POS PURCHASE LOBLAWS
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190712
+            <TRNAMT>-98.50
+            <FITID>B1039
+            <NAME>HYDRO ONE PAYMENT
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190715
+            <TRNAMT>-89.99
+            <FITID>B1040
+            <NAME>ROGERS CABLE
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190722
+            <TRNAMT>-86.20
+            <FITID>B1042
+            <NAME>POS PURCHASE METRO
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190801
+            <TRNAMT>3200.00
+            <FITID>B1043
+            <NAME>PAYROLL ACME CORP
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190803
+            <TRNAMT>-1450.00
+            <FITID>B1044
+            <NAME>PAD RENT LANDLORD
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190808
+            <TRNAMT>-124.67
+            <FITID>B1047
+            <NAME>POS PURCHASE LOBLAWS
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190812
+            <TRNAMT>-112.30
+            <FITID>B1045
+            <NAME>HYDRO ONE PAYMENT
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190812
+            <TRNAMT>-56.99
+            <FITID>B1082
+            <NAME>POS PURCHASE AMAZON
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190815
+            <TRNAMT>-89.99
+            <FITID>B1046
+            <NAME>ROGERS CABLE
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190822
+            <TRNAMT>-86.20
+            <FITID>B1048
+            <NAME>POS PURCHASE METRO
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190901
+            <TRNAMT>3200.00
+            <FITID>B1049
+            <NAME>PAYROLL ACME CORP
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190903
+            <TRNAMT>-1450.00
+            <FITID>B1050
+            <NAME>PAD RENT LANDLORD
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190908
+            <TRNAMT>-124.67
+            <FITID>B1053
+            <NAME>POS PURCHASE LOBLAWS
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190909
+            <TRNAMT>-300.00
+            <FITID>B1083
+            <NAME>e-Transfer sent Pat
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190912
+            <TRNAMT>-98.50
+            <FITID>B1051
+            <NAME>HYDRO ONE PAYMENT
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190915
+            <TRNAMT>-89.99
+            <FITID>B1052
+            <NAME>ROGERS CABLE
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190922
+            <TRNAMT>-86.20
+            <FITID>B1054
+            <NAME>POS PURCHASE METRO
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20191001
+            <TRNAMT>3200.00
+            <FITID>B1055
+            <NAME>PAYROLL ACME CORP
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191003
+            <TRNAMT>-1450.00
+            <FITID>B1056
+            <NAME>PAD RENT LANDLORD
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191008
+            <TRNAMT>-124.67
+            <FITID>B1059
+            <NAME>POS PURCHASE LOBLAWS
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191012
+            <TRNAMT>-112.30
+            <FITID>B1057
+            <NAME>HYDRO ONE PAYMENT
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191015
+            <TRNAMT>-89.99
+            <FITID>B1058
+            <NAME>ROGERS CABLE
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191022
+            <TRNAMT>-86.20
+            <FITID>B1060
+            <NAME>POS PURCHASE METRO
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191031
+            <TRNAMT>-45.00
+            <FITID>B1084
+            <NAME>HALLOWEEN SUPPLIES
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20191101
+            <TRNAMT>3200.00
+            <FITID>B1061
+            <NAME>PAYROLL ACME CORP
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191103
+            <TRNAMT>-1450.00
+            <FITID>B1062
+            <NAME>PAD RENT LANDLORD
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191108
+            <TRNAMT>-124.67
+            <FITID>B1065
+            <NAME>POS PURCHASE LOBLAWS
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191112
+            <TRNAMT>-98.50
+            <FITID>B1063
+            <NAME>HYDRO ONE PAYMENT
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191115
+            <TRNAMT>-89.99
+            <FITID>B1064
+            <NAME>ROGERS CABLE
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191122
+            <TRNAMT>-86.20
+            <FITID>B1066
+            <NAME>POS PURCHASE METRO
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191128
+            <TRNAMT>-156.80
+            <FITID>B1085
+            <NAME>POS PURCHASE WALMART
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20191201
+            <TRNAMT>3200.00
+            <FITID>B1067
+            <NAME>PAYROLL ACME CORP
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191203
+            <TRNAMT>-1450.00
+            <FITID>B1068
+            <NAME>PAD RENT LANDLORD
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191208
+            <TRNAMT>-124.67
+            <FITID>B1071
+            <NAME>POS PURCHASE LOBLAWS
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191212
+            <TRNAMT>-112.30
+            <FITID>B1069
+            <NAME>HYDRO ONE PAYMENT
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191215
+            <TRNAMT>-89.99
+            <FITID>B1070
+            <NAME>ROGERS CABLE
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20191215
+            <TRNAMT>800.00
+            <FITID>B1086
+            <NAME>e-Transfer Autodeposit
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191220
+            <TRNAMT>-210.00
+            <FITID>B1087
+            <NAME>POS PURCHASE TOYS
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191222
+            <TRNAMT>-86.20
+            <FITID>B1072
+            <NAME>POS PURCHASE METRO
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>FEE
+            <DTPOSTED>20191231
+            <TRNAMT>-14.95
+            <FITID>B1088
+            <NAME>MONTHLY FEE
+          </STMTTRN>
+        </BANKTRANLIST>
+        <LEDGERBAL>
+          <BALAMT>18248.84
+          <DTASOF>20191231
+        </LEDGERBAL>
+      </STMTRS>
+    </STMTTRNRS>
+  </BANKMSGSRSV1>
+</OFX>

@@ -1,0 +1,670 @@
+OFXHEADER:100
+DATA:OFXSGML
+VERSION:102
+SECURITY:NONE
+ENCODING:USASCII
+CHARSET:1252
+COMPRESSION:NONE
+OLDFILEUID:NONE
+NEWFILEUID:NONE
+
+<OFX>
+  <SIGNONMSGSRSV1>
+    <SONRS>
+      <STATUS>
+        <CODE>0
+        <SEVERITY>INFO
+      </STATUS>
+      <DTSERVER>20191231120000
+      <LANGUAGE>ENG
+    </SONRS>
+  </SIGNONMSGSRSV1>
+  <BANKMSGSRSV1>
+    <STMTTRNRS>
+      <TRNUID>1
+      <STATUS>
+        <CODE>0
+        <SEVERITY>INFO
+      </STATUS>
+      <STMTRS>
+        <CURDEF>CAD
+        <BANKACCTFROM>
+          <BANKID>0003
+          <ACCTID>CASHBOOK01
+          <ACCTTYPE>CHECKING
+        </BANKACCTFROM>
+        <BANKTRANLIST>
+          <DTSTART>20190101
+          <DTEND>20191231
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190101
+            <TRNAMT>3200.00
+            <FITID>K1001
+            <NAME>Salary Acme Corp
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190103
+            <TRNAMT>-1450.00
+            <FITID>K1002
+            <NAME>Rent payment
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190107
+            <TRNAMT>-38.78
+            <FITID>K1073
+            <NAME>PETER PIZZA
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190108
+            <TRNAMT>-124.67
+            <FITID>K1005
+            <NAME>Loblaws groceries
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190110
+            <TRNAMT>-200.00
+            <FITID>K1074
+            <NAME>e-Transfer to Tracey
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190113
+            <TRNAMT>-98.50
+            <FITID>K1003
+            <NAME>Hydro One utility
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190115
+            <TRNAMT>-89.99
+            <FITID>K1004
+            <NAME>Rogers internet
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190122
+            <TRNAMT>-86.20
+            <FITID>K1006
+            <NAME>Metro grocery
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190201
+            <TRNAMT>3200.00
+            <FITID>K1007
+            <NAME>Salary Acme Corp
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190203
+            <TRNAMT>-1450.00
+            <FITID>K1008
+            <NAME>Rent payment
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190208
+            <TRNAMT>-124.67
+            <FITID>K1011
+            <NAME>Loblaws groceries
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190213
+            <TRNAMT>-112.30
+            <FITID>K1009
+            <NAME>Hydro One utility
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190214
+            <TRNAMT>-65.00
+            <FITID>K1075
+            <NAME>Valentine flowers
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190215
+            <TRNAMT>-89.99
+            <FITID>K1010
+            <NAME>Rogers internet
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190222
+            <TRNAMT>-86.20
+            <FITID>K1012
+            <NAME>Metro grocery
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190301
+            <TRNAMT>3200.00
+            <FITID>K1013
+            <NAME>Salary Acme Corp
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190303
+            <TRNAMT>-1450.00
+            <FITID>K1014
+            <NAME>Rent payment
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190308
+            <TRNAMT>-124.67
+            <FITID>K1017
+            <NAME>Loblaws groceries
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190313
+            <TRNAMT>-98.50
+            <FITID>K1015
+            <NAME>Hydro One utility
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190315
+            <TRNAMT>-89.99
+            <FITID>K1016
+            <NAME>Rogers internet
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190320
+            <TRNAMT>-100.00
+            <FITID>K1076
+            <NAME>ATM cash
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190322
+            <TRNAMT>-86.20
+            <FITID>K1018
+            <NAME>Metro grocery
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190401
+            <TRNAMT>3200.00
+            <FITID>K1019
+            <NAME>Salary Acme Corp
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190403
+            <TRNAMT>-1450.00
+            <FITID>K1020
+            <NAME>Rent payment
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190405
+            <TRNAMT>-229.62
+            <FITID>K1077
+            <NAME>Intact insurance
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190408
+            <TRNAMT>-124.67
+            <FITID>K1023
+            <NAME>Loblaws groceries
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190413
+            <TRNAMT>-112.30
+            <FITID>K1021
+            <NAME>Hydro One utility
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190415
+            <TRNAMT>-89.99
+            <FITID>K1022
+            <NAME>Rogers internet
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190422
+            <TRNAMT>-86.20
+            <FITID>K1024
+            <NAME>Metro grocery
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190501
+            <TRNAMT>3200.00
+            <FITID>K1025
+            <NAME>Salary Acme Corp
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190503
+            <TRNAMT>-1450.00
+            <FITID>K1026
+            <NAME>Rent payment
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190508
+            <TRNAMT>-124.67
+            <FITID>K1029
+            <NAME>Loblaws groceries
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190513
+            <TRNAMT>-98.50
+            <FITID>K1027
+            <NAME>Hydro One utility
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190515
+            <TRNAMT>-89.99
+            <FITID>K1028
+            <NAME>Rogers internet
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190518
+            <TRNAMT>-133.45
+            <FITID>K1078
+            <NAME>Canadian Tire store
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190522
+            <TRNAMT>-86.20
+            <FITID>K1030
+            <NAME>Metro grocery
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190601
+            <TRNAMT>3200.00
+            <FITID>K1031
+            <NAME>Salary Acme Corp
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190601
+            <TRNAMT>500.00
+            <FITID>K1079
+            <NAME>Client payment received
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190603
+            <TRNAMT>-1450.00
+            <FITID>K1032
+            <NAME>Rent payment
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190608
+            <TRNAMT>-124.67
+            <FITID>K1035
+            <NAME>Loblaws groceries
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190613
+            <TRNAMT>-112.30
+            <FITID>K1033
+            <NAME>Hydro One utility
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190615
+            <TRNAMT>-89.99
+            <FITID>K1034
+            <NAME>Rogers internet
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190621
+            <TRNAMT>-42.50
+            <FITID>K1080
+            <NAME>Cineplex movies
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190622
+            <TRNAMT>-86.20
+            <FITID>K1036
+            <NAME>Metro grocery
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190701
+            <TRNAMT>3200.00
+            <FITID>K1037
+            <NAME>Salary Acme Corp
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190703
+            <TRNAMT>-1450.00
+            <FITID>K1038
+            <NAME>Rent payment
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190704
+            <TRNAMT>-70.15
+            <FITID>K1081
+            <NAME>Esso fuel
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190708
+            <TRNAMT>-124.67
+            <FITID>K1041
+            <NAME>Loblaws groceries
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190713
+            <TRNAMT>-98.50
+            <FITID>K1039
+            <NAME>Hydro One utility
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190715
+            <TRNAMT>-89.99
+            <FITID>K1040
+            <NAME>Rogers internet
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190722
+            <TRNAMT>-86.20
+            <FITID>K1042
+            <NAME>Metro grocery
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190801
+            <TRNAMT>3200.00
+            <FITID>K1043
+            <NAME>Salary Acme Corp
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190803
+            <TRNAMT>-1450.00
+            <FITID>K1044
+            <NAME>Rent payment
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190808
+            <TRNAMT>-124.67
+            <FITID>K1047
+            <NAME>Loblaws groceries
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190812
+            <TRNAMT>-56.99
+            <FITID>K1082
+            <NAME>Amazon purchase
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190813
+            <TRNAMT>-112.30
+            <FITID>K1045
+            <NAME>Hydro One utility
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190815
+            <TRNAMT>-89.99
+            <FITID>K1046
+            <NAME>Rogers internet
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190822
+            <TRNAMT>-86.20
+            <FITID>K1048
+            <NAME>Metro grocery
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20190901
+            <TRNAMT>3200.00
+            <FITID>K1049
+            <NAME>Salary Acme Corp
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190903
+            <TRNAMT>-1450.00
+            <FITID>K1050
+            <NAME>Rent payment
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190908
+            <TRNAMT>-124.67
+            <FITID>K1053
+            <NAME>Loblaws groceries
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190909
+            <TRNAMT>-300.00
+            <FITID>K1083
+            <NAME>e-Transfer Pat
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190913
+            <TRNAMT>-98.50
+            <FITID>K1051
+            <NAME>Hydro One utility
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190915
+            <TRNAMT>-89.99
+            <FITID>K1052
+            <NAME>Rogers internet
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20190922
+            <TRNAMT>-86.20
+            <FITID>K1054
+            <NAME>Metro grocery
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20191001
+            <TRNAMT>3200.00
+            <FITID>K1055
+            <NAME>Salary Acme Corp
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191003
+            <TRNAMT>-1450.00
+            <FITID>K1056
+            <NAME>Rent payment
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191008
+            <TRNAMT>-124.67
+            <FITID>K1059
+            <NAME>Loblaws groceries
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191013
+            <TRNAMT>-112.30
+            <FITID>K1057
+            <NAME>Hydro One utility
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191015
+            <TRNAMT>-89.99
+            <FITID>K1058
+            <NAME>Rogers internet
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191022
+            <TRNAMT>-86.20
+            <FITID>K1060
+            <NAME>Metro grocery
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191031
+            <TRNAMT>-45.00
+            <FITID>K1084
+            <NAME>Halloween supplies
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20191101
+            <TRNAMT>3200.00
+            <FITID>K1061
+            <NAME>Salary Acme Corp
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191103
+            <TRNAMT>-1450.00
+            <FITID>K1062
+            <NAME>Rent payment
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191108
+            <TRNAMT>-124.67
+            <FITID>K1065
+            <NAME>Loblaws groceries
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191113
+            <TRNAMT>-98.50
+            <FITID>K1063
+            <NAME>Hydro One utility
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191115
+            <TRNAMT>-89.99
+            <FITID>K1064
+            <NAME>Rogers internet
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191122
+            <TRNAMT>-86.20
+            <FITID>K1066
+            <NAME>Metro grocery
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191128
+            <TRNAMT>-156.80
+            <FITID>K1085
+            <NAME>Walmart shopping
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20191201
+            <TRNAMT>3200.00
+            <FITID>K1067
+            <NAME>Salary Acme Corp
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191203
+            <TRNAMT>-1450.00
+            <FITID>K1068
+            <NAME>Rent payment
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191208
+            <TRNAMT>-124.67
+            <FITID>K1071
+            <NAME>Loblaws groceries
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191213
+            <TRNAMT>-112.30
+            <FITID>K1069
+            <NAME>Hydro One utility
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191215
+            <TRNAMT>-89.99
+            <FITID>K1070
+            <NAME>Rogers internet
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20191215
+            <TRNAMT>800.00
+            <FITID>K1086
+            <NAME>Year-end bonus deposit
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191220
+            <TRNAMT>-210.00
+            <FITID>K1087
+            <NAME>Holiday gifts
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191222
+            <TRNAMT>-86.20
+            <FITID>K1072
+            <NAME>Metro grocery
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20191228
+            <TRNAMT>-150.00
+            <FITID>K1091
+            <NAME>Outstanding cheque CHQ-991
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20191230
+            <TRNAMT>400.00
+            <FITID>K1092
+            <NAME>Deposit in transit
+          </STMTTRN>
+        </BANKTRANLIST>
+        <LEDGERBAL>
+          <BALAMT>18526.59
+          <DTASOF>20191231
+        </LEDGERBAL>
+      </STMTRS>
+    </STMTTRNRS>
+  </BANKMSGSRSV1>
+</OFX>

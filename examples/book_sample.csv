@@ -1,0 +1,33 @@
+Date,Description,Amount,Reference
+2019-01-02,ATM deposit recorded,738.00,JA333817
+2019-01-02,Customer autodeposit batch,160.00,
+2019-01-02,Insurance PAD RBC,-19.90,
+2019-01-02,Mortgage payment CIBC,-1295.58,
+2019-01-02,e-Transfer to justin,-15.00,
+2019-01-02,e-Transfer to Tracey (part 1),-200.00,
+2019-01-02,e-Transfer to Tracey (part 2),-400.00,
+2019-01-02,McDonald's meal,-17.87,
+2019-01-02,Subway lunch,-21.07,
+2019-01-03,ATM deposit,674.40,JA739158
+2019-01-03,Autodeposit received,100.00,
+2019-01-03,TD loan payment,-494.39,
+2019-01-04,Branch transfer in,2000.00,9003
+2019-01-04,North Atlantic fuel,-68.90,
+2019-01-07,Autodeposit,80.00,
+2019-01-07,Autodeposit,500.00,
+2019-01-07,Cineplex tickets,-35.46,
+2019-01-07,Branch transfer,1000.00,9353
+2019-01-07,Mini Mania funds transfer,-2338.96,
+2019-01-07,e-Transfer Tracey,-40.00,
+2019-01-07,e-Transfer Pat,-1250.00,
+2019-01-07,PETER PIZZA,-38.78,
+2019-01-07,Canadian Tire store,-33.67,
+2019-01-14,ATM deposit,738.00,JA489558
+2019-01-14,Bell Aliant bill payment,-1250.00,2896
+2019-01-14,Fairstone loan payment,-388.95,
+2019-01-16,NAPA Auto parts Foxtrap,-82.13,
+2019-01-21,Merit Premium PAD,-206.86,
+2019-01-22,Monthly bank fee,-14.95,FEE
+2019-01-21,ABM fee refund,1.50,
+2019-01-25,Outstanding cheque not cleared,-150.00,CHQ-991
+2019-01-28,Deposit in transit (not on bank yet),500.00,DIT-01

@@ -1,0 +1,117 @@
+OFXHEADER:100
+DATA:OFXSGML
+VERSION:102
+SECURITY:NONE
+ENCODING:USASCII
+CHARSET:1252
+COMPRESSION:NONE
+OLDFILEUID:NONE
+NEWFILEUID:NONE
+
+<OFX>
+  <SIGNONMSGSRSV1>
+    <SONRS>
+      <STATUS>
+        <CODE>0
+        <SEVERITY>INFO
+      </STATUS>
+      <DTSERVER>20240315120000
+      <LANGUAGE>ENG
+    </SONRS>
+  </SIGNONMSGSRSV1>
+  <BANKMSGSRSV1>
+    <STMTTRNRS>
+      <TRNUID>1
+      <STATUS>
+        <CODE>0
+        <SEVERITY>INFO
+      </STATUS>
+      <STMTRS>
+        <CURDEF>CAD
+        <BANKACCTFROM>
+          <BANKID>BOOK
+          <ACCTID>CASHBOOK
+          <ACCTTYPE>CHECKING
+        </BANKACCTFROM>
+        <BANKTRANLIST>
+          <DTSTART>20240301
+          <DTEND>20240315
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20240301
+            <TRNAMT>4500.00
+            <FITID>BK001
+            <NAME>Salary - Acme Corp
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20240302
+            <TRNAMT>-1850.00
+            <FITID>BK002
+            <NAME>Rent payment
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20240304
+            <TRNAMT>-87.45
+            <FITID>BK003
+            <NAME>Loblaws groceries
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20240305
+            <TRNAMT>-42.19
+            <FITID>BK004
+            <NAME>Tim Hortons
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20240306
+            <TRNAMT>-250.00
+            <FITID>BK005
+            <NAME>e-Transfer to J Smith
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20240307
+            <TRNAMT>125.00
+            <FITID>BK006
+            <NAME>e-Transfer from A Lee
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20240308
+            <TRNAMT>-99.99
+            <FITID>BK007
+            <NAME>Rogers phone bill
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20240310
+            <TRNAMT>-65.30
+            <FITID>BK008
+            <NAME>Metro groceries
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT
+            <DTPOSTED>20240312
+            <TRNAMT>-15.00
+            <FITID>BK009
+            <NAME>ATM cash
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT
+            <DTPOSTED>20240314
+            <TRNAMT>50.00
+            <FITID>BK010
+            <NAME>Bank interest
+          </STMTTRN>
+        </BANKTRANLIST>
+        <LEDGERBAL>
+          <BALAMT>2365.07
+          <DTASOF>20240315
+        </LEDGERBAL>
+      </STMTRS>
+    </STMTTRNRS>
+  </BANKMSGSRSV1>
+</OFX>

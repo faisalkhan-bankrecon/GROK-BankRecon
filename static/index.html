@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Concord — Bank Recon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <!-- Login gate -->
+  <div id="login-screen" class="login-screen" hidden>
+    <div class="login-card">
+      <div class="brand login-brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div>
+          <h1>Concord</h1>
+          <p class="tag">Bank reconciliation engine</p>
+        </div>
+      </div>
+      <p class="login-copy">Sign in to access your private workspace. Your statements and matches stay private to your account.</p>
+      <button type="button" class="btn primary google-btn" id="btn-google">
+        Continue with Google
+      </button>
+      <p class="login-hint" id="login-error" hidden></p>
+    </div>
+  </div>
+
+  <div id="app" hidden>
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div>
+          <h1>Concord</h1>
+          <p class="tag">Bank reconciliation engine</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <span class="user-email" id="user-email"></span>
+        <button type="button" class="btn ghost" id="btn-signout">Sign out</button>
+        <button type="button" class="btn ghost" id="btn-reset" title="Clear session">Reset</button>
+        <button type="button" class="btn secondary" id="btn-accept-high">Accept ≥80%</button>
+        <button type="button" class="btn primary" id="btn-run">Run engine</button>
+      </div>
+    </header>
+
+    <section class="kpi" id="kpi">
+      <div class="kpi-card"><span class="label">Bank lines</span><strong id="k-bank">0</strong></div>
+      <div class="kpi-card"><span class="label">Book lines</span><strong id="k-book">0</strong></div>
+      <div class="kpi-card"><span class="label">Matched</span><strong id="k-matched">0</strong></div>
+      <div class="kpi-card"><span class="label">Proposed</span><strong id="k-proposed">0</strong></div>
+      <div class="kpi-card"><span class="label">Unmatched bank</span><strong id="k-umb">0</strong></div>
+      <div class="kpi-card"><span class="label">Unmatched book</span><strong id="k-umk">0</strong></div>
+      <div class="kpi-card wide"><span class="label">Activity difference</span><strong id="k-diff" class="mono">$0.00</strong></div>
+    </section>
+
+    <nav class="tabs" role="tablist">
+      <button type="button" class="tab active" data-tab="workspace">Workspace</button>
+      <button type="button" class="tab" data-tab="exceptions">Exceptions</button>
+      <button type="button" class="tab" data-tab="report">Report</button>
+      <button type="button" class="tab" data-tab="import">Import</button>
+    </nav>
+
+    <main>
+      <!-- Workspace -->
+      <section id="panel-workspace" class="panel active">
+        <div class="filters">
+          <input type="search" id="search" placeholder="Search description or ref…" />
+          <select id="status-filter">
+            <option value="all">All statuses</option>
+            <option value="open">Open</option>
+            <option value="proposed">Proposed</option>
+            <option value="matched">Matched</option>
+          </select>
+          <div class="mobile-side">
+            <button type="button" class="chip active" data-side-view="bank">Bank</button>
+            <button type="button" class="chip" data-side-view="book">Books</button>
+          </div>
+        </div>
+        <div class="ledgers">
+          <div class="ledger" data-ledger="bank">
+            <header>
+              <h2>Bank statement</h2>
+              <span class="count" id="bank-count">0</span>
+            </header>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th class="num">Amount</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="bank-body"></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="ledger" data-ledger="book">
+            <header>
+              <h2>Cash book / GL</h2>
+              <span class="count" id="book-count">0</span>
+            </header>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th class="num">Amount</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="book-body"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="match-bar" id="match-bar" hidden>
+          <span id="match-bar-text">0 selected</span>
+          <button type="button" class="btn primary" id="btn-manual-match">Match selected</button>
+          <button type="button" class="btn ghost" id="btn-clear-sel">Clear</button>
+        </div>
+      </section>
+
+      <!-- Exceptions -->
+      <section id="panel-exceptions" class="panel">
+        <div class="exceptions-grid">
+          <div>
+            <h2>Unmatched bank</h2>
+            <ul id="exc-bank" class="exc-list"></ul>
+          </div>
+          <div>
+            <h2>Unmatched books</h2>
+            <ul id="exc-book" class="exc-list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Report -->
+      <section id="panel-report" class="panel">
+        <div class="report-actions">
+          <a class="btn secondary" id="btn-export-csv" href="/api/export/csv">Export CSV</a>
+          <a class="btn secondary" id="btn-export-xlsx" href="/api/export/xlsx">Export Excel</a>
+        </div>
+        <div id="report-body" class="report-body"></div>
+      </section>
+
+      <!-- Import -->
+      <section id="panel-import" class="panel">
+        <div class="import-grid">
+          <div class="import-card">
+            <h2>Bank statement</h2>
+            <p>CSV, Excel (.xlsx), OFX or QFX</p>
+            <input type="file" id="file-bank" accept=".csv,.tsv,.txt,.xlsx,.xlsm,.ofx,.qfx" />
+            <label class="check"><input type="checkbox" id="replace-bank" checked /> Replace existing bank lines</label>
+            <button type="button" class="btn primary" id="btn-upload-bank">Upload bank</button>
+          </div>
+          <div class="import-card">
+            <h2>Cash book / GL</h2>
+            <p>CSV, Excel (.xlsx), OFX or QFX</p>
+            <input type="file" id="file-book" accept=".csv,.tsv,.txt,.xlsx,.xlsm,.ofx,.qfx" />
+            <label class="check"><input type="checkbox" id="replace-book" checked /> Replace existing book lines</label>
+            <button type="button" class="btn primary" id="btn-upload-book">Upload books</button>
+          </div>
+        </div>
+        <p class="muted" id="upload-status"></p>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" hidden></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
