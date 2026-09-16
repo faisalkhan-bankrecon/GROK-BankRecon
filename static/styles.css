@@ -422,6 +422,9 @@ tr.tx.matched { opacity: 0.7; }
   padding: 24px;
   background: var(--bg, #0f1419);
 }
+#login-screen[hidden] {
+  display: none !important;
+}
 .login-card {
   width: min(420px, 100%);
   background: var(--card, #1a222c);
